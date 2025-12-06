@@ -1,7 +1,7 @@
 import React from "react";
 // import navbar_img from "../assets/navbar_image.jpg";
 import navbar_img1 from "../assets/navbar_image.jpg";
-import play_store from "../assets/play_store.jpg";
+import play_store from "../assets/Play_store.jpg";
 import twitter from "../assets/Twitter_image.png"
 import loaction from "../assets/Location_image.png"
 import Youtube from "../assets/Youtube_image1.png"
