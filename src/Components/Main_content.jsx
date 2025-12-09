@@ -21,12 +21,9 @@ const Main_Content = () => {
   // ✅ HANDLE RESIZE - Calculate both width and height
   useEffect(() => {
     const handleResize = () => {
-      const width =
-        window.innerWidth < 768
-          ? window.innerWidth - 20
-          : 1100;
+      const width = window.innerWidth < 768 ? window.innerWidth - 20 : 1100;
       const height = (width * 720) / 1280;
-      
+
       setSlideWidth(width);
       setSlideHeight(height);
       setIndex(0);
@@ -41,7 +38,7 @@ const Main_Content = () => {
     <div className="flex flex-col items-center mt-5 mx-auto">
       {/* Carousel Container */}
       <div
-        className="overflow-hidden rounded-2xl w-full"
+        className="overflow-hidden rounded-2xl rounded-2xl mx-auto"
         style={{
           width: slideWidth,
           height: slideHeight,
@@ -56,7 +53,7 @@ const Main_Content = () => {
           }}
         >
           {images.map((img, i) => (
-            <img 
+            <img
               key={i}
               src={img}
               className="flex-shrink-0 rounded-2xl object-cover"

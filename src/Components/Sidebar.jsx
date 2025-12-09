@@ -6,8 +6,7 @@ import { useNavigate } from "react-router-dom";
 const Sidebar = ({ open, setOpen }) => {
   const [active, setActive] = useState("home");
 
-  const navigate=useNavigate()
-
+  const navigate = useNavigate();
 
   return (
     <>
@@ -21,7 +20,7 @@ const Sidebar = ({ open, setOpen }) => {
 
       {/* SIDEBAR */}
       <div
-        className={`fixed top-14 left-0 h-screen w-72 bg-[#E8F1FD] shadow-md z-50
+        className={`fixed top-14 left-0 h-[100dvh] w-72 bg-[#E8F1FD] shadow-md z-50
         transform transition-transform duration-300
         ${open ? "translate-x-0" : "-translate-x-full"}
         md:translate-x-0`}
@@ -38,7 +37,7 @@ const Sidebar = ({ open, setOpen }) => {
           ${active === "home" ? "text-[#146fe6] font-semibold" : "text-black"}`}
         >
           <img className="w-8" src={Home_icon} alt="" />
-          <p onClick={()=>navigate("/")}>Home</p>
+          <p onClick={() => navigate("/")}>Home</p>
         </div>
 
         {/* COURSE */}
@@ -48,11 +47,12 @@ const Sidebar = ({ open, setOpen }) => {
             setOpen(false);
           }}
           className={`p-4 pl-7 flex items-center gap-3 cursor-pointer 
-          ${active === "course" ? "text-[#146fe6] font-semibold" : "text-black"}`}
+          ${
+            active === "course" ? "text-[#146fe6] font-semibold" : "text-black"
+          }`}
         >
           <img className="w-8" src={Edu_icon} alt="" />
-          <p onClick={()=>navigate("/New_Course")}>Course</p>
-       
+          <p onClick={() => navigate("/New_Course")}>Course</p>
         </div>
       </div>
     </>

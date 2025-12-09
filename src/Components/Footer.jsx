@@ -2,16 +2,15 @@ import React from "react";
 // import navbar_img from "../assets/navbar_image.jpg";
 import navbar_img1 from "../assets/navbar_image.jpg";
 import play_store from "../assets/Play_store.jpg";
-import twitter from "../assets/Twitter_image.png"
-import loaction from "../assets/Location_image.png"
-import Youtube from "../assets/Youtube_image1.png"
-import Instagram from "../assets/instagram_image.png"
+import twitter from "../assets/Twitter_image.png";
+import loaction from "../assets/Location_image.png";
+import Youtube from "../assets/Youtube_image1.png";
+import Instagram from "../assets/instagram_image.png";
 
 const Footer = () => {
   return (
-    <div className="bg-[#E8F1FD] px-4 md:px-16 py-10 md:ml-72">
+    <div className="bg-[#E8F1FD] px-4 md:px-16 py-10 md:pl-72">
       <div className="flex flex-col md:flex-row justify-between items-start gap-10">
-
         {/* Logo */}
         <div>
           <img className="w-24" src={navbar_img1} alt="logo" />
@@ -23,9 +22,7 @@ const Footer = () => {
           <p className="mb-2 text-blue-600 cursor-pointer">
             Terms And Condition
           </p>
-          <p className="mb-2 text-blue-600 cursor-pointer">
-            Privacy Policy
-          </p>
+          <p className="mb-2 text-blue-600 cursor-pointer">Privacy Policy</p>
           <p className="mb-2 text-blue-600 cursor-pointer">
             Refunds & Cancellation Policy
           </p>
@@ -44,7 +41,6 @@ const Footer = () => {
             <img className="w-6" src={Instagram} alt="" />
           </div>
         </div>
-
       </div>
     </div>
   );

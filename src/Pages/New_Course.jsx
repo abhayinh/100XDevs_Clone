@@ -11,7 +11,7 @@ import Courses6 from "../assets/Courses6.png";
 
 const New_Course = () => {
   return (
-    <div className="md:ml-72 mb-40">
+    <div className="w-full md:pl-72 mb-40">
       <p className="text-center my-10 text-xl font-bold">Courses</p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 md:px-10 mb-12">
@@ -28,7 +28,7 @@ const New_Course = () => {
             <p className="text-lg font-semibold text-[#1dc26a]">29.53% Off</p>
           </div>
 
-          <button className="bg-[#146fe6] cursor-pointer mx-auto block px-10 my-4 py-2.5 rounded-3xl text-white w-[320px]">
+          <button className="bg-[#146fe6] cursor-pointer mx-auto block px-10 my-4 py-2.5 rounded-3xl text-white w-full sm:w-[320px]">
             View Details
           </button>
         </div>
@@ -119,9 +119,6 @@ const New_Course = () => {
             View Details
           </button>
         </div>
-      
-
-       
 
         <div className="border border-gray-300 rounded-xl">
           <img className="rounded-xl w-full" src={Courses3} alt="" />
@@ -140,7 +137,6 @@ const New_Course = () => {
           </button>
         </div>
 
-
         <div className="border border-gray-300 rounded-xl">
           <img className="rounded-xl w-full" src={Courses2} alt="" />
 
@@ -157,7 +153,6 @@ const New_Course = () => {
             View Details
           </button>
         </div>
-
 
         <div className="border border-gray-300 rounded-xl">
           <img className="rounded-xl w-full" src={Courses1} alt="" />
